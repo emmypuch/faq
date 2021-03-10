@@ -84,3 +84,11 @@ section {
 .accordion-item:target .answers {
     max-width: 20rem;
 }
+
+.accordion-item:target .accordion-link .ion-md-add {
+    display: none;
+}
+
+.accordion-item:target .accordion-link .ion-md-remove {
+    display: block;
+}
