@@ -42,7 +42,45 @@ section {
     color: rgba(255, 255, 255, .8);
 }
 
+.accordion-link h2 {
+    color: #e7d5ff;
+    font-size: 1.3rem;
+}
+
 .accordion-link i {
     color: #e7d5ff;
     padding: .5rem;
+}
+
+.accordion-link .ion-md-remove {
+    display: none;
+}
+
+.answers {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background: #212838;
+    transition: max-height 650ms;
+}
+
+.answers::before {
+    content: "";
+    position: absolute;
+    width: 0.6rem;
+    height: 90%;
+    background: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answers p {
+    font-size: 1rem;
+    color: #fff;
+    padding: 2rem;
+}
+
+.accordion-item:target .answers {
+    max-width: 20rem;
 }
