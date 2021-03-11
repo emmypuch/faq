@@ -41,9 +41,13 @@ div.label::before {
     font-size: 1.2rem;
 }
 
+div.accordion div.contentBx.active div.label::before {
+    content: "-";
+}
+
 div.content {
     position: relative;
-    padding: 10px;
+    /* padding: 10px; */
     background: #fff;
     height: 0;
     overflow: hidden;
@@ -51,7 +55,7 @@ div.content {
     overflow-y: auto;
 }
 
-.active {
+div.accordion div.contentBx.active div.content{
     height: 150px;
     padding: 10px;
 }
