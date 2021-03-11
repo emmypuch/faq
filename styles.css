@@ -19,12 +19,12 @@ div.accordion {
     max-height: 80px;
 }
 
-div.contentBx {
+div.accordion div.contentBx {
     position: relative;
     margin: 10px 20px;
 }
 
- div.label {
+div.accordion div.contentBx div.label {
     position: relative;
     padding: 10px;
     background: #2694af;
@@ -32,7 +32,7 @@ div.contentBx {
     cursor: pointer;
 }
 
-div.label::before {
+div.accordion div.contentBx div.label::before {
     content: "+";
     position: absolute;
     top: 50%;
@@ -45,9 +45,8 @@ div.accordion div.contentBx.active div.label::before {
     content: "-";
 }
 
-div.content {
+div.accordion div.contentBx div.content {
     position: relative;
-    /* padding: 10px; */
     background: #fff;
     height: 0;
     overflow: hidden;
