@@ -57,5 +57,10 @@ div.accordion div.contentBx div.content {
 
 div.accordion div.contentBx.active div.content {
   height: 150px;
-  padding: 10px;
+  padding: 15px;
+}
+
+div.accordion div.contentBx.active div.content p {
+  font-size: 0.9rem;
+  color: #3e3e3e;
 }
