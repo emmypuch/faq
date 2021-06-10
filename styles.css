@@ -21,12 +21,12 @@ div.accordion {
 
 div.accordion div.contentBx {
   position: relative;
-  margin: 10px 20px;
+  margin: 10px 30px;
 }
 
 div.accordion div.contentBx div.label {
   position: relative;
-  padding: 10px;
+  padding: 15px;
   background: #2694af;
   color: #fff;
   cursor: pointer;
@@ -38,11 +38,12 @@ div.accordion div.contentBx div.label::before {
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 div.accordion div.contentBx.active div.label::before {
   content: "-";
+  font-size: 1.5rem;
 }
 
 div.accordion div.contentBx div.content {
