@@ -1,60 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #bedfe8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e4e9eb;
 }
 
 div.accordion {
-    max-height: 80px;
+  max-height: 80px;
 }
 
 div.accordion div.contentBx {
-    position: relative;
-    margin: 10px 20px;
+  position: relative;
+  margin: 10px 20px;
 }
 
 div.accordion div.contentBx div.label {
-    position: relative;
-    padding: 10px;
-    background: #2694af;
-    color: #fff;
-    cursor: pointer;
+  position: relative;
+  padding: 10px;
+  background: #2694af;
+  color: #fff;
+  cursor: pointer;
 }
 
 div.accordion div.contentBx div.label::before {
-    content: "+";
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    font-size: 1.2rem;
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
 }
 
 div.accordion div.contentBx.active div.label::before {
-    content: "-";
+  content: "-";
 }
 
 div.accordion div.contentBx div.content {
-    position: relative;
-    background: #fff;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    overflow-y: auto;
+  position: relative;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
 }
 
-div.accordion div.contentBx.active div.content{
-    height: 150px;
-    padding: 10px;
+div.accordion div.contentBx.active div.content {
+  height: 150px;
+  padding: 10px;
 }
