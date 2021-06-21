@@ -30,6 +30,7 @@ div.accordion div.contentBx div.label {
   background: #2694af;
   color: #fff;
   cursor: pointer;
+  font-size: 1.7rem;
 }
 
 div.accordion div.contentBx div.label::before {
@@ -61,6 +62,6 @@ div.accordion div.contentBx.active div.content {
 }
 
 div.accordion div.contentBx.active div.content p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #3e3e3e;
 }
